@@ -14,3 +14,5 @@ Analysis code for the manuscript "Four and a half LIM domains protein 2 drives c
 Notebooks are provided without image outputs. Package versions for the human analyses are listed in the `requirements_*.txt` files.
 
 Sequencing data: GEO GSE346720.
+
+License: MIT.
