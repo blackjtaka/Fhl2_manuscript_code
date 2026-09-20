@@ -1,0 +1,9 @@
+# Environment in which fig6c_human_cohorts_FHL2.py reproduced all six reported FHL2 P values (verified 2026-09-19).
+# Python 3.10.15 (macOS arm64). DESeq2 dispersion fits can shift slightly between scipy versions.
+pydeseq2==0.5.2
+numpy==1.26.4
+scipy==1.14.1
+pandas==2.2.3
+anndata==0.8.0
+scanpy==1.10.3
+matplotlib

@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+
+# data and rendered outputs are not tracked
+*.h5ad
+*.h5
+*.rds
+*.RDS
+*.csv
+*.pdf
+*.png
+*.tiff
+
+# manuscript-editing / one-off trimming helpers (not analysis code)
+_tools/
