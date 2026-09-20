@@ -1,24 +1,6 @@
 #!/usr/bin/env python
 """Figure 6b — cardiomyocyte FHL2 by LVRR status, two-group model.
 
-The legend states n = 4 per group and P = 0.035, so the panel is drawn from the
-two-group model and nothing else. This reproduces branch [A] of
-`recalc_fhl2_stats_260901.py`, which is where the reported P comes from:
-
-  raw counts of CM_LVRR_DCM_120626.h5ad restricted to the barcodes retained in
-  CM_analysed_130626.h5ad (8,447 cardiomyocyte nuclei from 8 donors)
-  -> per-donor summed pseudobulk
-  -> genes with >= 10 counts in >= 4 donors (15,820 genes)
-  -> PyDESeq2, design ~LVRR with nonLVRR as reference
-  -> FHL2 two-sided Wald test, nominal P reported (pre-specified single gene)
-
-The earlier `Fig5_selfVAD_FHL2_recovery.py` drew a three-group model that also
-included control donors C9/C10/C13/C15; there LVRR vs nonLVRR gives P = 0.017, which
-is not the number in the legend. That script is kept in _excluded/superseded/.
-
-Points are per-donor log1p(CP10K) of the donor-summed counts; the box shows the
-median, the interquartile range, and whiskers to 1.5x the IQR, as the figure footer says.
-
   ~/miniforge3/envs/scanpy/bin/python make_fig6b_panel.py
 """
 from pathlib import Path
